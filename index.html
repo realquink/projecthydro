@@ -9,15 +9,8 @@
 </head>
 
 <script>
-function show_mobile_menu() {
-	document.getElementById("mobile-class").className = "banner-wrapper noanimation";
-	document.getElementById("menu-mobile").className = "menu-align active";
-}
-
-function hide_mobile_menu() {
-	document.getElementById("menu-mobile").className = "menu-align notactive";
-	document.getElementById("mobile-class").className = "banner-wrapper";
-}
+function show_mobile_menu() {document.getElementById("mobile-class").className = "banner-wrapper noanimation";document.getElementById("menu-mobile").className = "menu-align active";}
+function hide_mobile_menu() {document.getElementById("menu-mobile").className = "menu-align notactive";document.getElementById("mobile-class").className = "banner-wrapper";}
 </script>
 
 <body>
@@ -28,7 +21,7 @@ function hide_mobile_menu() {
 		<div class="banner">
 			<div class="menu-wrap">
 				<div class="logo">
-						<img alt="logo" src="images/logo.png" onclick="window.document.location.href='https://www.projecthydro.org'" />
+					<img alt="logo" src="images/logo.png" onclick="window.document.location.href='https://www.projecthydro.org'" />
 				</div>	
 
 				<i class="showmobile fas fa-bars" onclick="show_mobile_menu();"></i>
