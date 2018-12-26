@@ -397,6 +397,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2475d2', end
 	#intro {padding-top: 103px;}
 	i.showmobile {display: block;    float: right;    margin-right: 27px;    font-size: 24px;    margin-top: 18px;}
 	
+	.menu-align.active {overflow-y: auto; overflow-x: hidden;}
+	
 }	
 
 
