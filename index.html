@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Project Hydro</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<link href="profile.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
@@ -13,7 +16,7 @@ function show_mobile_menu() {document.getElementById("mobile-class").className =
 function hide_mobile_menu() {document.getElementById("menu-mobile").className = "menu-align notactive";document.getElementById("mobile-class").className = "banner-wrapper";}
 </script>
 
-<body>
+<body onload="shuffleCards();">
 
 
 	<div class="container">
@@ -27,14 +30,14 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 				<i class="showmobile fas fa-bars" onclick="show_mobile_menu();"></i>
 				<div class="menu-align" id="menu-mobile">
 					<i class="close-mobile fas fa-times-circle" onclick="hide_mobile_menu();"></i>
-					<a href="" class="topmenu button">Sign Up</a>
+					<a href="https://www.hydrogenplatform.com/sign-up" target="_blank" class="topmenu button">Sign Up</a>
 					<div id="menu">
 						<ul>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Developers</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Sign In</a></li>
+							<li><a href="#row-3">About</a></li>
+							<li><a href="#main-row">Team</a></li>
+							<li><a href="#row-4">Roadmap</a></li>
+							<li><a href="https://noahhydro.github.io/snowflake-dashboard/" target="_blank">dApps</a></li>
+							<li><a href="https://hydro.gitbook.io/solidity/" target="_blank">Developers</a></li>
 						</ul>	
 					</div>
 					<div class="clr"></div>
@@ -55,7 +58,7 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 			<div id="intro">
 				<h1>Security & Identity on the Blockchain</h1>
 				<br/>
-				<h2>Hydro is a decentralized ecosystem using cutting-edge cryptography to secure user accounts, identites, and transactions.</h2>				
+				<h2>Hydro is a decentralized ecosystem using cutting-edge cryptography to secure user accounts, identities, and transactions.</h2>				
 				
 				<br/><br/>
 
@@ -125,14 +128,14 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 					<div class="center">
 						<h3>Hydro Explained</h3>
 						<br/>
-						<a class="button color" href="#">Learn More</a>
+						<a class="button color" href="https://www.hydrogenplatform.com/hydro" target="_blank">Learn More</a>
 					</div>	
 				</div>
 				<div class="column-2">
 					<div class="center">
 						<h3>Developers</h3>
 						<br/>
-						<a class="button color" href="#">Learn More</a>
+						<a class="button color" href="https://hydro.gitbook.io/solidity/" target="_blank">Learn More</a>
 					</div>
 				</div>
 				<div class="clr"></div>
@@ -169,8 +172,530 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 	<main id="main-row">
 		<div class="inner-wrapper padding">	
 		
-			<h3 class="bottom-padding-30">Example Sub Page Article Title</h3>
-			This is the main section for articles content, etc on sub pages
+			<h3 class="bottom-padding-30 center">Core Contributors</h3>
+			
+			
+			
+			<div class="team-wrapper">
+				<div class="team-rowwrap">
+
+					<div class="card core">
+						<div class="card_Banner"
+							 style="background-image: url(&quot;backgrounds/architecture.jpg&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/andy.jpeg&quot;);"></div>
+						</div>
+						<h3>Andy Chorlian</h3>
+						<p>Protocol Developer</p>
+						<ul><a href="https://www.linkedin.com/in/achorlia/" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/AndyHydro" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/andy8052" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:andychorlian@gmail.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card core">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds/mumen.png&quot;);">
+							<div class="card_Avatar"
+								 style="background-image: url(&quot;people/anurag.png&quot;);"></div>
+						</div>
+						<h3>Anurag Angara</h3>
+						<p>Product</p>
+						<ul><a href="https://www.linkedin.com/in/anurag-angara-6863a483/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/AnuragHydro" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/AnuragHydro" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:anurag@hydrogenplatform.com" target="_blank"
+								   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card core">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds/aurora.jpg&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/nahom.png&quot;);"></div>
+						</div>
+						<h3>Nahom Yemane</h3>
+						<p>Community Manager</p>
+						<ul><a href="https://www.linkedin.com/in/nahom-yemane/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/NYemane_" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:nahom@hydrogenplatform.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card core">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds/stars.png&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/noah.png&quot;);"></div>
+						</div>
+						<h3>Noah Zinsmeister</h3>
+						<p>Protocol Developer</p>
+						<ul><a href="https://www.linkedin.com/in/noahzinsmeister/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/noahhydro" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/noahzinsmeister" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:noah@hydrogenplatform.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card core">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds/hexagons.png&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/shane.png&quot;);"></div>
+						</div>
+						<h3>Shane Hampton</h3>
+						<p>Product</p>
+						<ul><a href="https://www.linkedin.com/in/shane-hampton-a9689b49/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/shanehampton" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/citizenshane_" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:shane@hydrogenplatform.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card core">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds/kitty.jpg&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/jess.png&quot;);"></div>
+						</div>
+						<h3>Jess Nicholson</h3>
+						<p>Product</p>
+						<ul><a href="https://www.linkedin.com/in/jessica-nicholson-4b117092/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/JessHydrogen" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="mailto:jess@hydrogenplatform.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+				</div>
+			</div>
+			
+			<br/><br/><br/>
+			
+			<h3 class="bottom-padding-30 center">Decentralization Ambassadors</h3>
+			
+			
+			
+			<div class="team-wrapper">
+				<div class="team-rowwrap">
+
+					<div class="card da">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds//city.jpg&quot;);">
+							<div class="card_Avatar"
+								 style="background-image: url(&quot;people/pompey.jpg&quot;);"></div>
+						</div>
+						<h3>Pampey Raq Tripona</h3>
+						<p>Community Manager</p>
+						<ul><a href="https://www.linkedin.com/in/pampey-raq-tripona-7b0101173" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/Gitgineer" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/RaqDBlock" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:pampey@projecthydro.org" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card da">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds//mumbai.png&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/harsh.jpg&quot;);"></div>
+						</div>
+						<h3>Harsh Rajat</h3>
+						<p>HCDP Developer</p>
+						<ul><a href="https://www.linkedin.com/in/harshrajat/" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/harshrajat" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/harshrajat/" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:harsh.rajat@gmail.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card da">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds//lagos.jpg&quot;);">
+							<div class="card_Avatar"
+								 style="background-image: url(&quot;people/awosika.png&quot;);"></div>
+						</div>
+						<h3>Awosika Israel Ayodeji</h3>
+						<p>Business Development</p>
+						<ul><a href="https://www.linkedin.com/in/ayodeji-israel-awosika-69924124/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="http://twitter.com/ebunayo08" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:ebunayo08@gmail.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card da">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds//china.jpg&quot;);">
+							<div class="card_Avatar"
+								 style="background-image: url(&quot;people/jason_garland.png&quot;);"></div>
+						</div>
+						<h3>Jason Garland</h3>
+						<p>Coordinator</p>
+						<ul><a href="https://www.linkedin.com/in/jasongarland/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/jaazinn" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/jaazinn" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:jason.n.garland@protonmail.com" target="_blank"
+								   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card da">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds//nature.jpeg&quot;);">
+							<div class="card_Avatar"
+								 style="background-image: url(&quot;people/mark_anstead.jpg&quot;);"></div>
+						</div>
+						<h3>Mark Anstead</h3>
+						<p>Business Development</p>
+						<ul><a href="https://www.linkedin.com/in/mark-anstead-098251108/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/ansteadm" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/The_Shark_7" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:ansteadm@gmail.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card da">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds//pixels.jpg&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/talha.jpg&quot;);"></div>
+						</div>
+						<h3>Talha Altınkaya</h3>
+						<p>Community &amp; Social Media</p>
+						<ul><a href="https://www.linkedin.com/in/talhaaltinkaya/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/talhaaltinkaya" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/talhaaltinkaya" target="_blank"
+								   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:talhaaltinkaya@gmail.com" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+					<div class="card da">
+						<div class="card_Banner" style="background-image: url(&quot;backgrounds//cave.png&quot;);">
+							<div class="card_Avatar" style="background-image: url(&quot;people/tim.jpg&quot;);"></div>
+						</div>
+						<h3>Tim Allard</h3>
+						<p>HCDP / Development</p>
+						<ul><a href="https://www.linkedin.com/in/timallard/" target="_blank"
+							   rel="noopener noreferrer"><i style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="linkedin"
+								 class="svg-inline--fa fa-linkedin fa-w-14 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor"
+									  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+							</svg>
+						</i></a><a href="https://github.com/mitdralla" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="github"
+								 class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+								 viewBox="0 0 496 512">
+								<path fill="currentColor"
+									  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+							</svg>
+						</i></a><a href="https://twitter.com/TimAllard" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fab" data-icon="twitter"
+								 class="svg-inline--fa fa-twitter fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+							</svg>
+						</i></a><a href="mailto:tim@projecthydro.org" target="_blank" rel="noopener noreferrer"><i
+								style="font-size: 25px;">
+							<svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+								 class="svg-inline--fa fa-envelope fa-w-16 " role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path fill="currentColor"
+									  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+							</svg>
+						</i></a></ul>
+					</div>
+
+				</div>
+			</div>
 			
 		</div>
 	</div>
@@ -193,8 +718,8 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 										Raindrop is an authentication protocol which vastly improves upon current 2FA standards with decentralized public blockchain security for logins, transactions, and payments.  
 										<div class="clr"></div>
 									</div>
-									<a class="button color top-padding" href="#">Learn More</a>
-									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+									
+									<a class="button gray top-padding" target="_blank" href="https://github.com/hydrogen-dev/hydro-docs/tree/master/Raindrop"><i class="far fa-file-alt"></i>Whitepaper</a>
 								</div>
 							</div>
 						</div>
@@ -209,8 +734,8 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 										Snowflake is an identity protocol designed to protect private data from identity theft.  Consumer data will be encrypted on the blockchain, frustrating hackers, and providing a major barrier to identity theft attempts. 
 										<div class="clr"></div>
 									</div>	
-									<a class="button color top-padding" href="#">Learn More</a>
-									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+									
+									<a class="button gray top-padding" target="_blank" href="https://github.com/hydrogen-dev/hydro-docs/tree/master/Snowflake"><i class="far fa-file-alt"></i>Whitepaper</a>
 								</div>
 							</div>
 						</div>
@@ -225,8 +750,8 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 										Ice is a document signing and verification protocol which will allow users to stamp, authenticate, verify and seal any document or contract that is sent. 
 										<div class="clr"></div>
 									</div>	
-									<a class="button color top-padding" href="#">Learn More</a>
-									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+									
+									<a class="button gray top-padding" target="_blank" href="https://github.com/hydrogen-dev/hydro-docs/tree/master/Ice"><i class="far fa-file-alt"></i>Whitepaper</a>
 								</div>
 							</div>
 						</div>
@@ -243,8 +768,8 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 										Tide is a payment protocol which will allow for one-click authorization of debit and credit POS transactions, as well as instantaneous p2p, p2b, and b2b payments across the blockchain. 
 										<div class="clr"></div>
 									</div>	
-									<a class="button color top-padding" href="#">Learn More</a>
-									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+									
+									<a class="button color top-padding" href="#">Coming Soon</a>
 								</div>
 							</div>
 						</div>
@@ -259,8 +784,8 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 										Mist is an artificial intelligence protocol which will create industry best data modeling of high-speed transactions and fraud detection. 
 										<div class="clr"></div>
 									</div>	
-									<a class="button color top-padding" href="#">Learn More</a>
-									<a class="button gray top-padding" target="_blank" href="#"><i class="far fa-file-alt"></i>Whitepaper</a>
+									<a class="button color top-padding" href="#">Coming Soon</a>
+									
 								</div>
 							</div>
 						</div>
@@ -313,89 +838,7 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 	
 	
 	
-	<section id="row-6">
-		<div id="row-6-backgrounds">
-			<div class="inner-wrapper padding">	
-				<h3 class="center bottom-padding">Hydro in Media</h3>			
-					<div class="smaller">
-						
-						<div class="row-right">
-							<div class="row-right-1">
-								<br/>
-								<img alt="" class="media-images" src="images/media/blockchainppl.jpg" />
-							</div>
-							<div class="row-right-2">
-								<div class="row-left-2-innerpad">
-									<span class="media-titles">TD Bank Partners with Startup on Public Blockchain Licensing Deal</span>
-									<br/>
-									<a class="button noformatting top-padding" href="#">Learn More</a>
-								</div>	
-							</div>
-							<div class="row-right-3"><br/></div>
-							<div class="clr"></div>
-						</div>
-						
-						<div class="clr"></div>
-					
-						<div class="row-left">
-							<div class="row-left-1">
-								<br/>
-								<img alt="" class="media-images" src="images/media/keyboardhook.jpg" />
-							</div>
-							<div class="row-left-2">
-								<div class="row-left-2-innerpad">
-									<span class="media-titles">Top Crypto Exchanges Still Using Authenticator 2FA Despite Google Dropping Support</span>
-									<br/>
-									<a class="button noformatting top-padding" href="#">Learn More</a>
-								</div>
-							</div>
-							<div class="row-left-3"><br/></div>
-							<div class="clr"></div>
-						</div>
-						
-						<div class="clr"></div>
-				
-						<div class="row-right">
-							<div class="row-right-1">
-								<br/>
-								<img alt="" class="media-images" src="images/media/mobileapp.jpg" />
-							</div>
-							<div class="row-right-2">
-								<div class="row-left-2-innerpad">
-									<span class="media-titles">Fintech Startup Hydrogen Preparing to Take Crypto by Storm with Release of Hydro App</span>
-									<br/>
-									<a class="button top-padding noformatting" href="#">Learn More</a>
-								</div>	
-							</div>
-							<div class="row-right-3"><br/></div>
-							<div class="clr"></div>
-						</div>
-						
-						<div class="clr"></div>
-						
-						
-						<div class="row-left">
-							<div class="row-left-1">
-								<br/>
-								<img alt="" class="media-images" src="images/media/findi.jpg" />
-							</div>
-							<div class="row-left-2">
-								<div class="row-left-2-innerpad">
-									<span class="media-titles">Hydrogen Unveils FINDI Consortium to Boost Support for Public Blockchains</span>
-									<br/>
-									<a class="button noformatting top-padding" href="#">Learn More</a>
-								</div>
-							</div>
-							<div class="row-left-3"><br/></div>
-							<div class="clr"></div>
-						</div>
-						
-						<div class="clr"></div>
-				
-				</div>
-			</div>
-		</div>
-	</section>
+	
 	
 	
 	<footer id="footer">
@@ -405,23 +848,20 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 				<br/>
 				<div id="footer-icons">
 					<a href="https://www.facebook.com/hydrocommunitypage/" target="_blank"><i class="fab fa-facebook"></i></a>
-					<a href="https://twitter.com/HydroCommunity" target="_blank"><i class="fab fa-twitter"></i></a>
-					<a href="https://medium.com/hydrogen-api" target="_blank"><i class="fab fa-medium-m"></i></a>
+					<a href="https://twitter.com/HydroBlockchain" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://medium.com/project-hydro" target="_blank"><i class="fab fa-medium-m"></i></a>
 					<a href="https://discordapp.com/invite/SbW5Feg" target="_blank"><i class="fab fa-discord"></i></a>
 					<a href="https://t.me/projecthydro" target="_blank"><i class="fab fa-telegram"></i></a> 
 					<a href="http://www.reddit.com/r/projecthydro" target="_blank"><i class="fab fa-reddit"></i></a>
-					<a href="https://github.com/hydrogen-dev" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://github.com/HydroBlockchain" target="_blank"><i class="fab fa-github"></i></a>
 					<a href="https://www.linkedin.com/company/27129175/" target="_blank"><i class="fab fa-linkedin"></i></a>
 				</div>	
 				<div class="clr"></div>
 				<br/>
 				<div id="menu" class="center">
 					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Legal Information</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms of Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="https://medium.com/project-hydro/tagged/updates" target="_blank">Updates</a></li>
+						<li><a href="https://hydro.hs.app/communities/hydro" target="_blank">Hydro Protocol Voting</a></li>
 					</ul>	
 				</div>
 				<div class="clr"></div>
@@ -462,7 +902,41 @@ function hide_mobile_menu() {document.getElementById("menu-mobile").className = 
 
   window.addEventListener('scroll', handler, false);
 })();
-  
+
+
+(function($){
+
+	$.fn.shuffle = function() {
+
+		var allElems = this.get(),
+				getRandom = function(max) {
+					return Math.floor(Math.random() * max);
+				},
+				shuffled = $.map(allElems, function(){
+					var random = getRandom(allElems.length),
+							randEl = $(allElems[random]).clone(true)[0];
+					allElems.splice(random, 1);
+					return randEl;
+				});
+
+		this.each(function(i){
+			$(this).replaceWith($(shuffled[i]));
+		});
+
+		return $(shuffled);
+
+	};
+
+})(jQuery);
+
+function shuffleCards() {
+	$('.da').shuffle();
+	$('.da').css('display', 'block');
+
+	$('.core').shuffle();
+	$('.core').css('display', 'block');
+}
+
 </script>
 </body>
 </html>
